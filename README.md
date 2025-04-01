@@ -4,3 +4,16 @@ A drop in docker replacement that will force a context argument to be added to t
 
 ## usage
 
+Install (`default` context)
+
+`go install .`
+
+Install (`different` context)
+
+`go install -ldflags="-X 'main.Context=different'" .`
+
+Configure vscode setting
+
+```json
+    "docker.dockerPath": "docker-buildx-context-wrapper",
+```
